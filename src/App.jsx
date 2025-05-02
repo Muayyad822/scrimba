@@ -17,15 +17,10 @@ export default function App() {
         return (
         <Entry
             key={entry.id}
-            img= {entry.img}
-            title={entry.title}
-            country={entry.country}
-            googleMapsLink={entry.googleMapsLink}
-            dates={entry.dates}
-            text={entry.text}
+            entry={entry}
         />
         )
-    })
+    }) 
      
     return (
         <>
@@ -64,7 +59,7 @@ export default function App() {
 
 // export default function App() {
 //     const jokeElement = jokes.map((joke) => {
-//         return(
+//         return (
 //             <>
 //             <Joke
 //             Setup={joke.setup}
